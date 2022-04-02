@@ -22,6 +22,8 @@ In the synaptic transmission system of a biological neural network, the basis of
 * numpy 1.19.4
 * matlplotlib 3.4.1
 
+Thanks to **BenWhetton** who developed such a useful and easy-to-use pruning tools in Keras.
+
 # Pruning Process
 
 # Pruning Results
