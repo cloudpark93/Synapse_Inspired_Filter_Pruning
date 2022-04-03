@@ -30,13 +30,14 @@ https://github.com/BenWhetton/keras-surgeon
 *For the details, please refer to the attached manuscript!*  
 
 **1. Dynamic Score (Major concept)**
-* Assigns scores to positive and negative weights in the filters according to their values, and rank the importance of the filters by their overall scores.  
+* Assigns scores to positive and negative weights in the filters according to their values, and ranks the importance of the filters by their overall scores.  
 
 **2. Dynamic Step (Applied concept 1)**
-* Assigns scores to positive and negative weights in the filters according to their values, and rank the importance of the filters by their simultaneous importance.
+* Assigns scores to positive and negative weights in the filters according to their values, and ranks the importance of the filters by their simultaneous importance.
 
 **3. Dynamic Step with Geometric Median (Applied concept 2)**
-* as
+* Adopted the idea suggested by [**YangHe**](https://github.com/he-y/filter-pruning-geometric-median)
+* Ranks the importance of the filters by the Euclidean distances of positive and negative filters, from shortest to the longest.
 
 # Pruning Process
 
