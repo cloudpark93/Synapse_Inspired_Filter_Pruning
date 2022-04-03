@@ -26,9 +26,23 @@ Thanks to [**BenWhetton**]((https://github.com/BenWhetton/keras-surgeon)) for de
 Please do visit his website for the details, too!  
 https://github.com/BenWhetton/keras-surgeon
 
+# Filter Ranking Methods
+*For the details, please refer to the attached manuscript!*  
+
+**1. Dynamic Score (Major concept)**
+* Assigns scores to positive and negative weights in the filters according to their values, and rank the importance of the filters by their overall scores.  
+
+**2. Dynamic Step (Applied concept 1)**
+* Assigns scores to positive and negative weights in the filters according to their values, and rank the importance of the filters by their simultaneous importance.
+
+**3. Dynamic Step with Geometric Median (Applied concept 2)**
+* as
 
 # Pruning Process
 
+1. Filter rank by methods 
+
+Sensitiity analysis
 # Pruning Results
 
 # Results Analysis
