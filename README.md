@@ -54,11 +54,25 @@ https://github.com/BenWhetton/keras-surgeon
 4. Retraining  
     * Retrain the pruned network for fewer epochs than the origninal model.
 
-The below attached image is the sensitivity analysis of ResNet18 with three different methods.  
-It is noticeable that different methods have yielded differernt sensitivity patterns.  
-![sensitivity method별 다른거](https://user-images.githubusercontent.com/78515689/161476387-0a3ddae7-ecba-4a9b-a962-4266ebd0e09c.PNG)
+\* **The below attached image is the sensitivity analysis of ResNet18 with three different pruning methods.**  
+\* **It is noticeable that different methods have yielded different sensitivity patterns.**  
+![sensitivity method별 다른거](https://user-images.githubusercontent.com/78515689/161476387-0a3ddae7-ecba-4a9b-a962-4266ebd0e09c.PNG)  
 
-Sensitiity analysis
 # Pruning Results
+The table below is the comparison of our pruning methods and other methods for VGG-16 trained on CIFAR-10 dataset.  
+Other more interesting results on ResNet18, 34, 50 trained on ImageNet dataset are in the manuscript!  
+
+Model|Approach|Acc Drop(%)|Params Reduction(%)|FLOPs Reduction(%)
+:---:|:---:|:---:|:---:|:---:
+1|PFEC]|**-0.15**|64.0|34.2
+4|FPGM|0.04|-|34.2
+7|NSP|-0.04|-|54.0
+7|HRank|0.53|82.9|53.5
+7|NS|-0.14|**88.52**|51.0
+7|Ours (D-Score)|0.16|87.03|64.81
+7|Ours (D-Step)|0.12|86.70|**65.40**
+7|Ours (D-Step GM)|-0.10|97.17|64.37
+
+
 
 # Results Analysis
