@@ -74,13 +74,17 @@ VGG-16|Ours (D-Step)|0.12|86.70|**65.40**
 VGG-16|Ours (D-Step GM)|-0.10|97.17|64.37
 
 # Feature Map Visualization
-To 
+Feature maps are visualized and compared with other method in order to validate the functionality of our proposed methods.
 * Model: VGG-16  
 * Dataset: CIFAR-10  
 * Visualization layer: 2nd Conv layer  
-* Input image: Frog
-* <img src = "https://user-images.githubusercontent.com/78515689/161480185-3f71d978-71be-41fa-a141-278c8247aeb2.JPEG" width="200px" height="151px"> 
-* 
+* Pruning amount: 20% of filters to be pruned
+* Input image: Frog (below)
+* <img src = "https://user-images.githubusercontent.com/78515689/161480185-3f71d978-71be-41fa-a141-278c8247aeb2.JPEG" width="200px" height="151px">  
 
+The image below is an additional explanation for how our figure is composed/interpreted.  
+![visualize 설명](https://user-images.githubusercontent.com/78515689/161481705-ec36f9ed-0e42-4751-9287-062cf9bbdaf3.PNG)  
+
+The image below shows that when the filter importance is ranked by our method (D-Score), it does not prune the unique feature map producing filters (eg, filter 4, and filter 17).
 ![featuremap visualzie](https://user-images.githubusercontent.com/78515689/161479986-ce24e31e-d7a0-47f6-bb76-14bdfe20d9d3.PNG)  
 
