@@ -27,7 +27,7 @@ Please do visit his website for the details, too!
 https://github.com/BenWhetton/keras-surgeon
 
 # Filter Ranking Methods
-*For the details, please refer to the attached manuscript!*  
+*For the details, please refer to the attached manuscript, **Section 3.1**!*  
 
 **1. Dynamic Score (Major concept)**
 * Assigns scores to positive and negative weights in the filters according to their values, and ranks the importance of the filters by their overall scores.  
@@ -37,11 +37,26 @@ https://github.com/BenWhetton/keras-surgeon
 
 **3. Dynamic Step with Geometric Median (Applied concept 2)**
 * Adopted the idea suggested by [**YangHe**](https://github.com/he-y/filter-pruning-geometric-median)
-* Ranks the importance of the filters by the Euclidean distances of positive and negative filters, from shortest to the longest.
+* Ranks the importance of the filters by the Euclidean distances of positive and negative filters, from the shortest to the longest.
 
-# Pruning Process
+# Pruning Process  
+*For the details, please refer to the attached manuscript, **Section 3.2 ~ 3.3**!*  
+1. Filter Importance  
+    * Determine the importance of filters by any of the three suggested methods.  
+2. Sensitivity Analysis  
+    * Determine the sensitivity of individual layers to pruning.  
+    * Iteratively prune each layer and evaluate the accuracy of the pruned network in every step..  
+3. Parallel Pruning 
+    * Set a pruning threshold accuracy (aka target accuracy) based on the pruning sensitivity analysis.  
+    * Calculate the number of filters to be eliminated in all applicable layers.  
+        * Differernt number of filters are eliminated in each layer (refer to the image below or the attached manuscript for better understanding)  
+        * <img src = "https://user-images.githubusercontent.com/78515689/161475388-d8ecc0e1-be6b-4178-9b78-ae8134b6329a.PNG" width="500px" height="320px">  
+4. Retraining  
+    * Retrain the pruned network for fewer epochs than the origninal model.
 
-1. Filter rank by methods 
+The below attached image is the sensitivity analysis of ResNet18 with three different methods.  
+It is noticeable that different methods have yielded differernt sensitivity patterns.  
+![sensitivity method별 다른거](https://user-images.githubusercontent.com/78515689/161476387-0a3ddae7-ecba-4a9b-a962-4266ebd0e09c.PNG)
 
 Sensitiity analysis
 # Pruning Results
