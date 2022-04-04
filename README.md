@@ -73,6 +73,8 @@ VGG-16|Ours (D-Score)|0.16|87.03|64.81
 VGG-16|Ours (D-Step)|0.12|86.70|**65.40**
 VGG-16|Ours (D-Step GM)|-0.10|97.17|64.37
 
+# Feature Map Visualization
 
 
-# Results Analysis
+![featuremap visualzie](https://user-images.githubusercontent.com/78515689/161479986-ce24e31e-d7a0-47f6-bb76-14bdfe20d9d3.PNG)  
+
