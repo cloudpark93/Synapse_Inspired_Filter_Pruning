@@ -64,14 +64,14 @@ Other more interesting results on ResNet18, 34, 50 trained on ImageNet dataset a
 
 Model|Approach|Acc Drop(%)|Params Reduction(%)|FLOPs Reduction(%)
 :---:|:---:|:---:|:---:|:---:
-|PFEC|**-0.15**|64.0|34.2
-|[FPGM](https://github.com/he-y/filter-pruning-geometric-median)|0.04|-|34.2
-|NSP|-0.04|-|54.0
-|[HRank](https://github.com/lmbxmu/HRank)|0.53|82.9|53.5
-|NS|-0.14|**88.52**|51.0
-|Ours (D-Score)|0.16|87.03|64.81
-|Ours (D-Step)|0.12|86.70|**65.40**
-|Ours (D-Step GM)|-0.10|97.17|64.37
+ |PFEC|**-0.15**|64.0|34.2
+ |[FPGM](https://github.com/he-y/filter-pruning-geometric-median)|0.04|-|34.2
+ |NSP|-0.04|-|54.0
+ VGG-16|[HRank](https://github.com/lmbxmu/HRank)|0.53|82.9|53.5
+ |NS|-0.14|**88.52**|51.0
+ |Ours (D-Score)|0.16|87.03|64.81
+ |Ours (D-Step)|0.12|86.70|**65.40**
+ |Ours (D-Step GM)|-0.10|97.17|64.37
 
 
 
