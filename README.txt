@@ -1,0 +1,27 @@
+Directory structure:
+--------------------
+
+synapse_inspired_pruning/
+ README................................This file
+ config.py.............................ImageNet TFRecords directory and train and test setting file
+ main.py...............................Main :)
+ train_evaluate_retrain.py.............Train/retrain/evalutate/prediction code/lr_finder
+ utils/................................Load dataset and prune model 
+   util_func.py........................Check model FLOPs, Params, Conv layers, FC layers
+   dataset_loader.py...................Load CIFAR-10 and ImageNet dataset
+   image_processing.py.................Dataset images preprocessing 
+   pruning_conv_fc_filters.py..........Managing Conv and FC layer pruning
+   pruning_method_conv.py..............Pruning methods on Conv layer(DS score,DS step, DS step GM)
+   pruning_method_fc.py................Pruning methods on FC layer(DS score,DS step, DS step GM)
+   pruning_amount.py...................Pruning amount calculator
+   geometric_method.py.................SOTA geometric median method(find common information)
+ lr_finder/............................Find optimal learning rate 
+   keras_callback.py...................Learning rate finder using keras callback 
+   read_lr_finder_output.py............Signal processing to find the optimal learning rate
+ plot/.................................Plot sensitivity analysis result 
+   sensitivity_graph.py................Pruning sensitivity graph plot and save plot image   
+ model/................................The architecture of the models to learn CIFAR-10
+   model_architectures.py..............VGG16 and ResNet56 model architecture
+   
+   
+   
