@@ -7,6 +7,9 @@ In the human synaptic system, there are two important channels known as excitato
 Please visit my [**co-researcher's**](https://github.com/jinsoo9595) github as well!  
 https://github.com/jinsoo9595
 
+# Some words for the visitors
+The shared codes are in the process of updating.
+
 # Main Concept of Synapse Inspired Filter Pruning
 <img src = "https://user-images.githubusercontent.com/78515689/161383050-4ff6ab9b-88c7-4c37-99fc-ea0fcd245f21.png" width="800px" height="350px">
 
