@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import linalg as LA
 from kerassurgeon import Surgeon
-from .geometric_method import geometric_median_DYJS
+from .geometric_method import geometric_median_DScore
 
 def pos(lst):
     return [x for x in lst if x >= 0]
@@ -121,7 +121,7 @@ def pruning_method_conv(model, layer_to_prune, pruning_amount, method):
             weight_removable = {}
 
             # 1. Reduce dimension 4D -> 2D
-            # 2. Normalization (L1, L2, DYJS)
+            # 2. Normalization 
             # 3. Sort norm value => get index order
             # 4. Sort weight by index order
             # 5. Calculate distance between coordinates
