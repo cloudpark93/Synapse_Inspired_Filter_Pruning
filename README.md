@@ -7,8 +7,21 @@ In the human synaptic system, there are two important channels known as excitato
 Please visit my [**co-researcher's**](https://github.com/jinsoo9595) github as well!  
 https://github.com/jinsoo9595
 
+# Development time
+Dec 2020 ~ May 2021
+
 # Some words for the visitors
-The shared codes are in the process of updating.
+For our case, we initially began this project with different development environments for VGGnets(CIFAR-10) and ResNets(ImageNet).  
+I can proudly say my [co-researcher](https://github.com/jinsoo9595) and I developed from scratch for VGGnets with CIFAR-10 dataset.  
+For ResNets (with ImageNet dataset), we used [**jkjung-avt's github**](https://github.com/jkjung-avt/keras_imagenet) as the reference, and tried to adapt his **keras_imagenet** code into ours.  
+
+So please do visit [jkjung-avt's github](https://github.com/jkjung-avt/keras_imagenet) too!
+
+I tried my best to combine the VGGnets(CIFAR-10) pruning codes and ResNets(ImageNet) pruning codes as much as possible.
+
+For the main pruning mechnisms of various ***Synapse inspired filter pruning***, please refer to utils/pruning_method_conv.py and utils/pruning_method_fc.py!  
+
+
 
 # Main Concept of Synapse Inspired Filter Pruning
 <img src = "https://user-images.githubusercontent.com/78515689/161383050-4ff6ab9b-88c7-4c37-99fc-ea0fcd245f21.png" width="800px" height="350px">
