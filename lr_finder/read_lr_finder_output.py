@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from scipy.signal import argrelmax
 from scipy.ndimage.filters import gaussian_filter1d
 
-file_name = 'resnet18_DYJS_step_learning_rates'
+file_name = 'resnet18_D_step_learning_rates'
 
 data = csv.DictReader(open("{}.csv".format(file_name)))
 
