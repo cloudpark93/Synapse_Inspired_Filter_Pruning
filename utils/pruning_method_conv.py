@@ -51,7 +51,7 @@ def pruning_method_conv(model, layer_to_prune, pruning_amount, method):
             index = np.array(range(weight.shape[-1]))
 
             pos_sum_filters = LA.norm(weight.reshape(-1, weight.shape[3]).clip(min=0), axis=0, ord=1)
-            sort_pos_sum_filters = pos_sum_filters.argsort() # score 값을 도출
+            sort_pos_sum_filters = pos_sum_filters.argsort()
 
             neg_sum_filters = LA.norm(weight.reshape(-1, weight.shape[3]).clip(max=0), axis=0, ord=1)
             sort_neg_sum_filters = neg_sum_filters.argsort()
@@ -82,7 +82,7 @@ def pruning_method_conv(model, layer_to_prune, pruning_amount, method):
             weight = conv_layer_weights[i]
 
             pos_sum_filters = LA.norm(weight.reshape(-1, weight.shape[3]).clip(min=0), axis=0, ord=1)
-            sort_pos_sum_filters = pos_sum_filters.argsort() # score 값을 도출
+            sort_pos_sum_filters = pos_sum_filters.argsort()
 
             neg_sum_filters = LA.norm(weight.reshape(-1, weight.shape[3]).clip(max=0), axis=0, ord=1)
             sort_neg_sum_filters = neg_sum_filters.argsort()
