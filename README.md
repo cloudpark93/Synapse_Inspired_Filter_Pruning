@@ -19,8 +19,17 @@ So please do visit [jkjung-avt's github](https://github.com/jkjung-avt/keras_ima
 
 I tried my best to combine the VGGnets(CIFAR-10) pruning codes and ResNets(ImageNet) pruning codes as much as possible.
 
-For the main pruning mechnisms of various ***Synapse inspired filter pruning***, please refer to utils/pruning_method_conv.py and utils/pruning_method_fc.py!  
+For the main pruning mechnisms of various ***Synapse inspired filter pruning***, please refer to the three scripts in /utils/
 
+```
+Synapse_Inspired_Filter_Pruning/
+│   ...
+└───utils/
+    │   pruning_method_conv.py
+    │   pruning_method_fc.py
+    │   geometric method.py
+    │   ...
+```
 
 
 # Main Concept of Synapse Inspired Filter Pruning
