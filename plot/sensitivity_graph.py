@@ -16,9 +16,9 @@ original_num_filters_conv = []
 img_w, img_h = 224, 224
 classes = 1000
 
-# method = 'DYJS_score'
-# method = 'DYJS_step'
-method = 'DYJS_step_gm'
+# method = 'D_score'
+# method = 'D_step'
+method = 'D_step_gm'
 arch = 'resnet18'
 dataset_ = 'imagenet'
 dataset_path = 'D:/imagenet/ImageNet'
@@ -43,8 +43,8 @@ pruning_index = 5.0
 plot_line_color = ["r", "g", "b", "k", "y", "m", "c"]
 plot_line_style = ["-", "--"]
 
-root_file = ["DYJS_score", "DYJS_step", "DYJS_step_gm"]
-file_sub_name = ["DYJS_score", "DYJS_step", "DYJS_step_gm"]
+root_file = ["D_score", "D_step", "D_step_gm"]
+file_sub_name = ["D_score", "D_step", "D_step_gm"]
 pruning_method = ["Dynamic Score base", "Dynamic Step base", "Dynamic Step GM base"]
 epoch_arr = ["%", "%", "%"]
 
@@ -55,7 +55,7 @@ layer_number = [3, 11, 21, 30, 40, 49, 59, 68, 78]
 for method_count in range(3):
     top1_acc = []
     top5_acc = []
-    file_number = sum([len(d) for r, d, files in os.walk("test_continuous_pruning/DYJS_score")])
+    file_number = sum([len(d) for r, d, files in os.walk("test_continuous_pruning/D_score")])
 
     for layer in layer_number:
         pruned_top1_acc = []
