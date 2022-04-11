@@ -104,7 +104,7 @@ if __name__ == '__main__':
     """ Main function """
 
     # Set arguments0
-    parser = argparse.ArgumentParser(description='DYJS pruning on CIFAR10 & ImageNet datset using Keras')
+    parser = argparse.ArgumentParser(description='Dynamic Score pruning on CIFAR10 & ImageNet datset using Keras')
     parser.add_argument('--mode', type=str, default='pruning_sensitivity', help='train, pruning_each_layer, pruning_sensitivity, pruned_and_retrain')
     parser.add_argument('--arch', type=str, default='vgg16', help='vgg16, resnet18, resnet56')
     parser.add_argument('--batch_size', type=int, default=64, help='input batch size for training (default: 64)')
@@ -121,7 +121,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str, default='cifar10', help='training dataset: cifar10, imagenet')
     parser.add_argument('--num_classes', type=str, default='10', help='number of class for training dataset (default: 10)')
 
-    parser.add_argument('--pruning_method', type=str, default='DYJS_score', help='L1norm, GM, DYJS_score, DYJS_step, DYJS_step_gm')
+    parser.add_argument('--pruning_method', type=str, default='D_score', help='L1norm, D_score, D_step, D_step_gm')
     parser.add_argument('--pruning_percent', type=int, default=5, help='% of the filters are to be pruned (default: 5)')
     parser.add_argument('--pruning_sensitivity', type=int, default=70, help='% of the pruning sensitivity (default: 90)')
 
@@ -147,7 +147,7 @@ if __name__ == '__main__':
     main(args)
 
     # # Start Main
-    # method = ['DYJS_score', 'DYJS_step', 'DYJS_step_gm', 'L1norm']
+    # method = ['D_score', 'D_step', 'D_step_gm', 'L1norm']
     # mode = ['pruning_each_layer', 'pruning_sensitivity', 'pruned_and_retrain']
     #
     # for k in range(0, 3):
