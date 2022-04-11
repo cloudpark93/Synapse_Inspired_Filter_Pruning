@@ -1,7 +1,7 @@
 import numpy as np
 from numpy import linalg as LA
 from kerassurgeon import Surgeon
-from .geometric_method import geometric_median, geometric_median_DYJS
+from .geometric_method import geometric_median_DYJS
 
 def pos(lst):
     return [x for x in lst if x >= 0]
@@ -106,7 +106,7 @@ def pruning_method_conv(model, layer_to_prune, pruning_amount, method):
 
         return model_pruned
 
-    elif method == 'D_step_gm': #geometric_median_conv
+    elif method == 'D_step_gm': #geometric_median_applied method
         # Load surgeon package
         surgeon = Surgeon(model)
 
@@ -126,8 +126,7 @@ def pruning_method_conv(model, layer_to_prune, pruning_amount, method):
             # 4. Sort weight by index order
             # 5. Calculate distance between coordinates
             # 6. Sum distance (of each filter)
-            # norm_val = geometric_median(weight, "euclidean", "DYJS")
-            norm_val = geometric_median_DYJS(weight, "euclidean", pruning_amount[i])
+            norm_val = geometric_median_DScore(weight, "euclidean", pruning_amount[i])
             print('distance calculation result: ', norm_val)
             remove_channel = [int(norm_val[i].split("_")[1]) for i in range(0, pruning_amount[i])]
             print(remove_channel)
