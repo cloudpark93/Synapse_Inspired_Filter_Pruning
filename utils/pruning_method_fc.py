@@ -45,7 +45,7 @@ def pruning_method_fc(model, layer_to_prune, pruning_amount, method):
 
         return model_pruned
 
-    if method == 'D_score': #filter_ranking_score
+    if method == 'D_score':
         # Load surgeon package
         surgeon = Surgeon(model)
 
