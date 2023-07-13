@@ -19,7 +19,7 @@ So please do visit [jkjung-avt's github](https://github.com/jkjung-avt/keras_ima
 
 I tried my best to combine the VGGnets(CIFAR-10) pruning codes and ResNets(ImageNet) pruning codes as much as possible.
 
-For the main pruning mechnisms of various ***Synapse inspired filter pruning***, please refer to the three scripts in /utils/
+For the main pruning mechanisms of various ***Synapse inspired filter pruning***, please refer to the three scripts in /utils/
 
 ```
 Synapse_Inspired_Filter_Pruning/
