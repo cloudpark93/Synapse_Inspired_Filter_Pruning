@@ -10,6 +10,11 @@ https://github.com/jinsoo9595
 # Development time
 Dec 2020 ~ May 2021
 
+# Preprint in arXiv
+The preprint of this work, [D-Score: A Synapse-Inspired Approach for Filter Pruning](https://arxiv.org/abs/2308.04470), has been uploaded to arXiv on 8th Aug 2023.  
+
+
+
 # Some words for the visitors
 For our case, we initially began this project with different development environments for VGGnets(CIFAR-10) and ResNets(ImageNet).  
 I can proudly say my [co-researcher](https://github.com/jinsoo9595) and I developed from scratch for VGGnets with CIFAR-10 dataset.  
